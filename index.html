@@ -17,10 +17,10 @@
                 </a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
                     <li><a href="#founder">Founder</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#schedule" class="schedule-btn">Schedule Meeting</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -43,28 +43,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Us</h2>
-                <p>We're dedicated to transforming how businesses handle data through intelligent automation</p>
-            </div>
-            <div class="mission-vision">
-                <div class="mission">
-                    <i class="fas fa-bullseye"></i>
-                    <h3>Our Mission</h3>
-                    <p>To empower businesses of all sizes with affordable, scalable data automation solutions that eliminate repetitive tasks and unlock the full potential of their data assets.</p>
-                </div>
-                <div class="vision">
-                    <i class="fas fa-eye"></i>
-                    <h3>Our Vision</h3>
-                    <p>To become the global leader in data process automation, helping businesses transition to more efficient, data-driven operations that foster innovation and sustainable growth.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Founder Section -->
     <section id="founder" class="founder">
         <div class="container">
@@ -77,7 +55,7 @@
                     <img src="https://picsum.photos/seed/founder/400/400.jpg" alt="Founder Profile">
                 </div>
                 <div class="founder-info">
-                    <h3>Your Name</h3>
+                    <h3>Gonzalo Sandoval</h3>
                     <h4>Founder & Data Automation Expert</h4>
                     <p>With over 10 years of experience in data science and automation, I founded DataFlow Automation with a clear vision: to democratize data automation for businesses of all sizes. My journey began with a degree in Computer Science, followed by roles at leading tech companies where I witnessed firsthand the transformative power of efficient data processing.</p>
                     <p>I believe that automation shouldn't be reserved for large corporations with massive budgets. Small and medium businesses deserve the same competitive advantages that come from streamlined operations and data-driven decision making.</p>
@@ -214,74 +192,84 @@
                 <h2>What Our Clients Say</h2>
                 <p>Real feedback from businesses we've helped transform</p>
             </div>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-image">
-                        <img src="https://picsum.photos/seed/reviewer1/200/200.jpg" alt="Maria Rodriguez">
-                    </div>
-                    <div class="review-content">
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+            <div class="reviews-carousel">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-track">
+                        <div class="review-card">
+                            <div class="review-image">
+                                <img src="https://picsum.photos/seed/reviewer1/200/200.jpg" alt="Maria Rodriguez">
+                            </div>
+                            <div class="review-content">
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="review-text">"DataFlow Automation transformed our entire data workflow. We're now processing 10x more data with the same team size. Absolutely game-changing!"</p>
+                                <h4 class="reviewer-name">Maria Rodriguez</h4>
+                                <p class="reviewer-position">CEO, TechStart Chile</p>
+                            </div>
                         </div>
-                        <p class="review-text">"DataFlow Automation transformed our entire data workflow. We're now processing 10x more data with the same team size. Absolutely game-changing!"</p>
-                        <h4 class="reviewer-name">Maria Rodriguez</h4>
-                        <p class="reviewer-position">CEO, TechStart Chile</p>
+                        <div class="review-card">
+                            <div class="review-image">
+                                <img src="https://picsum.photos/seed/reviewer2/200/200.jpg" alt="Carlos Silva">
+                            </div>
+                            <div class="review-content">
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="review-text">"The custom automation solutions saved us over 20 hours per week. Our team can now focus on strategic initiatives instead of repetitive tasks."</p>
+                                <h4 class="reviewer-name">Carlos Silva</h4>
+                                <p class="reviewer-position">Operations Director, RetailPro</p>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-image">
+                                <img src="https://picsum.photos/seed/reviewer3/200/200.jpg" alt="Ana Martinez">
+                            </div>
+                            <div class="review-content">
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="review-text">"Professional, reliable, and incredibly effective. The ROI was evident within the first month. Highly recommend for any business looking to scale."</p>
+                                <h4 class="reviewer-name">Ana Martinez</h4>
+                                <p class="reviewer-position">CFO, FinanceFlow</p>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-image">
+                                <img src="https://picsum.photos/seed/reviewer4/200/200.jpg" alt="Diego Fernandez">
+                            </div>
+                            <div class="review-content">
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="review-text">"The data synchronization across our platforms is seamless. No more manual updates or discrepancies. It's like having an extra team member who never sleeps."</p>
+                                <h4 class="reviewer-name">Diego Fernandez</h4>
+                                <p class="reviewer-position">IT Manager, LogisticsPlus</p>
+                            </div>
+                        </div>
                     </div>
+                    <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
                 </div>
-                <div class="review-card">
-                    <div class="review-image">
-                        <img src="https://picsum.photos/seed/reviewer2/200/200.jpg" alt="Carlos Silva">
-                    </div>
-                    <div class="review-content">
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="review-text">"The custom automation solutions saved us over 20 hours per week. Our team can now focus on strategic initiatives instead of repetitive tasks."</p>
-                        <h4 class="reviewer-name">Carlos Silva</h4>
-                        <p class="reviewer-position">Operations Director, RetailPro</p>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-image">
-                        <img src="https://picsum.photos/seed/reviewer3/200/200.jpg" alt="Ana Martinez">
-                    </div>
-                    <div class="review-content">
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="review-text">"Professional, reliable, and incredibly effective. The ROI was evident within the first month. Highly recommend for any business looking to scale."</p>
-                        <h4 class="reviewer-name">Ana Martinez</h4>
-                        <p class="reviewer-position">CFO, FinanceFlow</p>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-image">
-                        <img src="https://picsum.photos/seed/reviewer4/200/200.jpg" alt="Diego Fernandez">
-                    </div>
-                    <div class="review-content">
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="review-text">"The data synchronization across our platforms is seamless. No more manual updates or discrepancies. It's like having an extra team member who never sleeps."</p>
-                        <h4 class="reviewer-name">Diego Fernandez</h4>
-                        <p class="reviewer-position">IT Manager, LogisticsPlus</p>
-                    </div>
+                <div class="carousel-indicators">
+                    <button class="indicator active"></button>
+                    <button class="indicator"></button>
                 </div>
             </div>
         </div>
@@ -420,7 +408,6 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
                         <li><a href="#founder">Founder</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#services">Services</a></li>
