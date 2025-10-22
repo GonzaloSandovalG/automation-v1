@@ -519,80 +519,76 @@ section {
     color: var(--dark-color);
 }
 
-/* Pricing Section */
-.pricing {
+/* Reviews Section */
+.reviews {
     background-color: var(--light-color);
 }
 
-.pricing-cards {
+.reviews-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
 
-.pricing-card {
+.review-card {
     background-color: white;
     border-radius: 10px;
-    overflow: hidden;
+    padding: 2rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
-.pricing-card:hover {
+.review-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-.pricing-card.featured {
+.review-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--light-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.review-card:hover .review-image img {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.pricing-card.featured .pricing-header {
-    background-color: var(--primary-color);
-    color: white;
+.review-stars {
+    color: #ffc107;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
-.pricing-header {
-    padding: 1.5rem;
-    text-align: center;
-    background-color: var(--dark-color);
-    color: white;
+.review-text {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
 }
 
-.pricing-header h3 {
-    font-size: 1.5rem;
+.reviewer-name {
+    font-size: 1.1rem;
+    color: var(--dark-color);
     margin-bottom: 0.5rem;
 }
 
-.price {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.price span {
-    font-size: 1rem;
-    font-weight: normal;
-}
-
-.pricing-body {
-    padding: 2rem;
-}
-
-.pricing-features {
-    list-style: none;
-    margin-bottom: 2rem;
-}
-
-.pricing-features li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #eee;
-}
-
-.pricing-features li i {
-    color: var(--success-color);
-    margin-right: 0.5rem;
+.reviewer-position {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 /* Schedule Section */
@@ -914,10 +910,6 @@ footer {
 
     .section-title h2 {
         font-size: 2rem;
-    }
-
-    .pricing-card.featured {
-        transform: scale(1);
     }
     
     .timeline-item:nth-child(odd) .timeline-content,
